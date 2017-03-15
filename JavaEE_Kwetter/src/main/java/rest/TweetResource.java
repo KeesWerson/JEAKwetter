@@ -20,7 +20,7 @@ public class TweetResource {
     TweetService tweetService;
 
     @GET
-    public List<Tweet> allTweets(){
+    public List<Tweet> allTweets() throws Exception {
         return tweetService.allTweets();
     }
 }

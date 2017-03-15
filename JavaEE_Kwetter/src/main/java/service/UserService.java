@@ -17,7 +17,7 @@ public class UserService {
     @Inject
     UserDAO userDAO;
 
-    public List<User> allUsers(){
+    public List<User> allUsers() throws Exception {
         return userDAO.allUsers();
     }
 

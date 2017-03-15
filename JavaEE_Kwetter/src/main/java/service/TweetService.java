@@ -16,7 +16,7 @@ public class TweetService {
     @Inject
     TweetDAO tweetDAO;
 
-    public List<Tweet> allTweets(){
+    public List<Tweet> allTweets() throws Exception {
         return tweetDAO.allTweets();
     }
 }

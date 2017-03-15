@@ -20,7 +20,7 @@ public class UserResource {
     UserService userService;
 
     @GET
-    public List<User> allUsers(){
+    public List<User> allUsers() throws Exception {
         return userService.allUsers();
     }
 
