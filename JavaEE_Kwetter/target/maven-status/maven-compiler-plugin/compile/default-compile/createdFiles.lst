@@ -1,0 +1,5 @@
+rest\UserResource.class
+domain\User.class
+service\UserService.class
+DAO\UserDAO.class
+rest\JAXRSconfig.class

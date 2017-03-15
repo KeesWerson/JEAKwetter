@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="JavaEE_Kwetter:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="Jea6BasicJEE.war">
+      <element id="artifact" artifact-name="JavaEE_Kwetter:war exploded" />
+    </root>
+  </artifact>
+</component>
