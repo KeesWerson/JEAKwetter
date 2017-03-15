@@ -23,8 +23,9 @@ public class UserDAO {
 
     public List<User> allFollowers(User user) { return entityManager.createNamedQuery("User.allFollowers").setParameter("user", user).getResultList(); }
 
-    public void saveUser(User user){
+    public boolean saveUser(User user){
         entityManager.persist(user);
+        return true;
     }
 
     public boolean removeUser(User user){

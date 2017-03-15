@@ -20,4 +20,8 @@ public class UserService {
     public List<User> allUsers(){
         return userDAO.allUsers();
     }
+
+    public boolean saveUser(User user){
+        return userDAO.saveUser(user);
+    }
 }

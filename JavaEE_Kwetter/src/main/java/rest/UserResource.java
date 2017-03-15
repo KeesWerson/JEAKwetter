@@ -23,4 +23,9 @@ public class UserResource {
     public List<User> allUsers(){
         return userService.allUsers();
     }
+
+    @GET
+    public boolean saveUser(User user){
+        return userService.saveUser(user);
+    }
 }

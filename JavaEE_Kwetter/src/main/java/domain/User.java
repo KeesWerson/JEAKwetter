@@ -22,7 +22,7 @@ public class User implements Serializable {
     @ManyToMany
     private List<User> following;
 
-    @OneToMany(mappedBy = "userTweet")
+    @OneToMany(mappedBy = "userTweets")
     private List<Tweet> tweets;
 
 
@@ -39,6 +39,14 @@ public class User implements Serializable {
 
     public boolean getTrue(){
         return true;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public String getEmail() {
@@ -64,4 +72,8 @@ public class User implements Serializable {
     public void setPassword(String password) {
         this.password = password;
     }
+
+    /*public boolean saveUser(User user){
+
+    }*/
 }

@@ -18,7 +18,7 @@ public class Tweet implements Serializable {
     private String text;
 
     @ManyToOne
-    private User userTweet;
+    private User userTweets;
 
     public Tweet(String text) {
         this.text = text;

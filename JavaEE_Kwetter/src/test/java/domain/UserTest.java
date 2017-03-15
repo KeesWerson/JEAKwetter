@@ -1,6 +1,12 @@
 package domain;
 
+import DAO.UserDAO;
+import org.junit.Before;
 import org.junit.Test;
+
+import javax.inject.Inject;
+import javax.persistence.EntityManager;
+
 import static org.junit.Assert.*;
 
 /**
@@ -8,16 +14,33 @@ import static org.junit.Assert.*;
  */
 public class UserTest extends User {
 
+    @Inject
+    UserDAO userDAO;
+
+    @Inject
+    EntityManager entityManager;
+
     public User user;
 
     public UserTest() {
         this.user = new User();
     }
 
+
     @Test
     public void testConcatenate() {
-        User user = new User("Kees", "Werson");
+        User user2 = new User("Kees", "Werson");
 
-        assertTrue(user.getTrue());
+        assertTrue(user2.getTrue());
     }
+
+    /*@Test
+    public void testSaveUser() {
+        user = new User("Kees", "Werson");
+
+
+        userDAO.saveUser(user);
+
+        assertNotNull(user.getId());
+    }*/
 }
