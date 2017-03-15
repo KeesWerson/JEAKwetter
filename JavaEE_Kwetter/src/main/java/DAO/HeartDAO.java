@@ -16,7 +16,7 @@ public class HeartDAO {
     @PersistenceContext
     EntityManager entityManager;
 
-    public List<Heart> allHearts() {
+    public List<Heart> allHearts() throws Exception {
         return entityManager.createNamedQuery("Heart.all").getResultList();
     }
 

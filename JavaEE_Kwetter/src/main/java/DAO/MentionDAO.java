@@ -16,7 +16,7 @@ public class MentionDAO {
     @PersistenceContext
     EntityManager entityManager;
 
-    public List<Mention> allMentions() {
+    public List<Mention> allMentions() throws Exception {
         return entityManager.createNamedQuery("Mention.all").getResultList();
     }
 

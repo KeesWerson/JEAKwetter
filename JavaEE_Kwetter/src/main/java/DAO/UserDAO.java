@@ -17,7 +17,7 @@ public class UserDAO {
     @PersistenceContext
     EntityManager entityManager;
 
-    public List<User> allUsers() {
+    public List<User> allUsers() throws Exception {
         return entityManager.createNamedQuery("User.all").getResultList();
     }
 

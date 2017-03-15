@@ -16,7 +16,7 @@ public class TweetDAO {
     @PersistenceContext
     EntityManager entityManager;
 
-    public List<Tweet> allTweets() {
+    public List<Tweet> allTweets() throws Exception {
         return entityManager.createNamedQuery("Tweet.all").getResultList();
     }
 

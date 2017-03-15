@@ -1,6 +1,6 @@
 package DAO;
 
-import domain.User;
+import domain.Tweet;
 import org.junit.Test;
 
 import java.util.List;
@@ -10,20 +10,15 @@ import static org.junit.Assert.*;
 /**
  * Created by Kees on 15/03/2017.
  */
-public class UserDAOTest extends UserDAO {
+public class TweetDAOTest extends TweetDAO {
 
     @Test
-    public List<User> allUsers() throws Exception {
+    public List<Tweet> allTweets() throws Exception {
         return null;
     }
 
     @Test
-    public void allFollowers() throws Exception {
-
-    }
-
-    @Test
-    public void saveUser() throws Exception {
+    public void saveTweet() throws Exception {
 
     }
 
