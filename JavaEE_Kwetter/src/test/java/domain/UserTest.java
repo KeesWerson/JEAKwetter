@@ -12,7 +12,7 @@ import static org.junit.Assert.*;
 /**
  * Created by Kees on 07/03/2017.
  */
-public class UserTest extends User {
+public class UserTest {
 
     @Inject
     UserDAO userDAO;

@@ -8,6 +8,7 @@ import java.util.List;
  * Created by Kees on 07/03/2017.
  */
 @Entity
+@Table(name = "KwetterUser")
 @NamedQueries({@NamedQuery(name = "User.allFollowers", query = "SELECT u FROM User as u WHERE :user MEMBER OF u.following"),
                @NamedQuery(name = "User.all", query = "SELECT u FROM User u")})
 public class User implements Serializable {

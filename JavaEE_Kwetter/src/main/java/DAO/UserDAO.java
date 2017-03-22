@@ -33,5 +33,7 @@ public class UserDAO {
         return true;
     }
 
-
+    public void setEntityManager(EntityManager entityManager) {
+        this.entityManager = entityManager;
+    }
 }

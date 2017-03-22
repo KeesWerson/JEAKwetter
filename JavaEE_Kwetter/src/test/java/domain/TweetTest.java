@@ -7,7 +7,7 @@ import static org.junit.Assert.*;
 /**
  * Created by Kees on 15/03/2017.
  */
-public class TweetTest extends Tweet {
+public class TweetTest {
 
     public Tweet tweet;
 

@@ -13,11 +13,14 @@ import java.util.List;
  * Created by Kees on 15/03/2017.
  */
 @Stateless
-@Path("tweet")
+@Path("tweets")
 public class TweetResource {
 
     @Inject
     TweetService tweetService;
+
+    public TweetResource() {
+    }
 
     @GET
     public List<Tweet> allTweets() throws Exception {

@@ -24,4 +24,22 @@ public class UserService {
     public boolean saveUser(User user){
         return userDAO.saveUser(user);
     }
+
+    /**
+     * Creates a new user
+     * @param email : users email address
+     * @param username : users username
+     * @param password : users password
+     * @return the created user
+     */
+    public User Create(String email, String username, String password) {
+
+        User user = new User();
+        user.setName(username);
+        user.setEmail(email);
+        user.setPassword(password);
+
+        userDAO.saveUser(user);
+        return user;
+    }
 }

@@ -10,21 +10,21 @@ import static org.junit.Assert.*;
 /**
  * Created by Kees on 15/03/2017.
  */
-public class MentionDAOTest extends MentionDAO {
+public class MentionDAOTest {
 
     @Test
-    public List<Mention> allMentions() throws Exception {
-        return null;
+    public void allMentions() throws Exception {
+        return;
     }
 
     @Test
     public void saveMention() throws Exception {
-
+        return;
     }
 
     @Test
     public void removeMention() throws Exception {
-
+        return;
     }
 
 }

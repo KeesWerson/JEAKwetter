@@ -4,10 +4,11 @@
     <root id="root">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
-          <element id="module-output" name="JavaEE_Kwetter" />
+          <element id="module-output" name="Jea6BasicJEE" />
         </element>
         <element id="directory" name="lib">
           <element id="library" level="project" name="Maven: org.codehaus.groovy:groovy-all:2.4.8" />
+          <element id="library" level="project" name="Maven: org.mockito:mockito-all:1.9.5" />
           <element id="library" level="project" name="Maven: org.eclipse.persistence:javax.persistence:2.1.1" />
           <element id="library" level="project" name="Maven: org.eclipse.persistence:eclipselink:2.6.4" />
           <element id="library" level="project" name="Maven: org.eclipse.persistence:commonj.sdo:2.1.1" />
@@ -18,7 +19,7 @@
       <element id="directory" name="META-INF">
         <element id="file-copy" path="$PROJECT_DIR$/target/Jea6BasicJEE/META-INF/MANIFEST.MF" />
       </element>
-      <element id="javaee-facet-resources" facet="JavaEE_Kwetter/web/Web" />
+      <element id="javaee-facet-resources" facet="Jea6BasicJEE/web/Web" />
     </root>
   </artifact>
 </component>

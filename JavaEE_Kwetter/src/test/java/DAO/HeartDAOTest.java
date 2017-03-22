@@ -10,21 +10,21 @@ import static org.junit.Assert.*;
 /**
  * Created by Kees on 15/03/2017.
  */
-public class HeartDAOTest extends HeartDAO {
+public class HeartDAOTest {
 
     @Test
-    public List<Heart> allHearts() throws Exception {
-        return null;
+    public void allHearts() throws Exception {
+        return;
     }
 
     @Test
     public void saveHeart() throws Exception {
-
+        return;
     }
 
     @Test
     public void removeHeart() throws Exception {
-
+        return;
     }
 
 }
