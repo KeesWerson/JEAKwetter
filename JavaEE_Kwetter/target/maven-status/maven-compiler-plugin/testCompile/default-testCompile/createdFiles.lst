@@ -1,1 +1,9 @@
+DAO\HeartDAOTest.class
+service\UserServiceTest.class
+DAO\UserDAOTest.class
+rest\UserResourceTest.class
+DAO\UserDAOTest$1.class
+domain\TweetTest.class
 domain\UserTest.class
+DAO\TweetDAOTest.class
+DAO\MentionDAOTest.class

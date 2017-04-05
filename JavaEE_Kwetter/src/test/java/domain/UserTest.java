@@ -1,7 +1,6 @@
 package domain;
 
 import DAO.UserDAO;
-import org.junit.Before;
 import org.junit.Test;
 
 import javax.inject.Inject;

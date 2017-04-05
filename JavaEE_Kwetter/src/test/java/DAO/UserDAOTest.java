@@ -38,7 +38,6 @@ public class UserDAOTest {
     public void allUsers() throws Exception {
         Query query = mock(Query.class);
         when(entityManager.createNamedQuery("User.all")).thenReturn(query);
-        when(query.setParameter("user", user)).thenReturn(query);
 
         List<User> dummyResult = new ArrayList<>();
         when(query.getResultList()).thenReturn(dummyResult);
@@ -54,7 +53,20 @@ public class UserDAOTest {
 
     @Test
     public void allFollowers() throws Exception {
-        return;
+        Query query = mock(Query.class);
+        when(entityManager.createNamedQuery("User.allFollowers")).thenReturn(query);
+        when(query.setParameter("user", user)).thenReturn(query);
+
+        List<User> dummyResult = new ArrayList<>();
+        when(query.getResultList()).thenReturn(dummyResult);
+
+        //test
+        List<User> result = userDAO.allFollowers(user);
+
+        //verify
+        verify(entityManager).createNamedQuery("User.allFollowers");
+        verify(query).getResultList();
+        assertSame(dummyResult, result);
     }
 
     @Test

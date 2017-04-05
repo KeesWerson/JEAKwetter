@@ -6,7 +6,6 @@ import service.UserService;
 
 import javax.ejb.Stateless;
 import javax.inject.Inject;
-import javax.json.JsonObject;
 import javax.ws.rs.*;
 import java.util.List;
 
@@ -31,8 +30,8 @@ public class UserResource {
     @POST
     @Consumes("application/json")
     @Path("create")
-    public User Create(final UserJSON jasonObject){
-        return userService.Create(jasonObject.email, jasonObject.name, jasonObject.password);
+    public User create(final UserJSON jasonObject){
+        return userService.create(jasonObject.email, jasonObject.name, jasonObject.password);
     }
 
     @POST

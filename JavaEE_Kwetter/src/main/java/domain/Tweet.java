@@ -31,6 +31,14 @@ public class Tweet implements Serializable {
         return true;
     }
 
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
     public String getText() {
         return text;
     }
@@ -38,4 +46,5 @@ public class Tweet implements Serializable {
     public void setText(String text) {
         this.text = text;
     }
+
 }

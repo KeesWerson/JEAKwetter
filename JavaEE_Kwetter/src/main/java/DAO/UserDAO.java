@@ -33,6 +33,16 @@ public class UserDAO {
         return true;
     }
 
+    public User findUserByCredentials(String username, String password){
+        for (Object user : entityManager.createNamedQuery("User.all").getResultList()) {
+            User foundUser = (User)user;
+            if(foundUser.getName().equals(username) && foundUser.getPassword().equals(password)){
+                return foundUser;
+            }
+        }
+        return null;
+    }
+
     public void setEntityManager(EntityManager entityManager) {
         this.entityManager = entityManager;
     }

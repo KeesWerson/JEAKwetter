@@ -32,7 +32,7 @@ public class UserService {
      * @param password : users password
      * @return the created user
      */
-    public User Create(String email, String username, String password) {
+    public User create(String email, String username, String password) {
 
         User user = new User();
         user.setName(username);
@@ -41,5 +41,10 @@ public class UserService {
 
         userDAO.saveUser(user);
         return user;
+    }
+
+    public User login(String username, String password){
+
+        return userDAO.findUserByCredentials(username, password);
     }
 }
